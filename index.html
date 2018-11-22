@@ -24,7 +24,7 @@
                     <a href="#" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Pricing</a>
+                    <a href="#" class="nav-link" data-toggle="modal" data-target="#exampleModal">Log in</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">About us</a>
@@ -96,6 +96,173 @@
             </div>
         </div>
     </div>
+
+    <!-- Вложенные модальные окна не поддержтиваются -->
+    <!-- Размер окна modal-sm modal-lg -->
+    <!-- Классы для уменьшения высоты input form-control-sm, form-control-lg  -->
+    <!-- Для построения сеток внтури формы используем form-row -->
+    <!-- Отключение инпута disabled -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModal" aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal Title</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Email">
+                                <small id="emailHelp" class="form-text text-muted">Enter your email</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPass">Password</label>
+                                <input type="password" class="form-control" id="exampleInputpass" aria-describedby="passHelp" placeholder="Password">
+                                <small id="passHelp" class="form-text text-muted">Пароль должен содержать 10 символов</small>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input">
+                                Запомнить меня
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <div class="btn btn-primary">Save</div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- mw-100 тоже, что и max-width 100% для адаптации картинок -->
+
+    <div class="container p-0">
+        <h1 class="m-0 text-center">Hello world!</h1>
+        <div class="mx-auto w-50">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos dolores nulla praesentium rerum cumque earum tempora voluptatibus, consequatur laboriosam quibusdam nisi nemo sunt, nihil quasi aperiam qui adipisci eveniet et nostrum vero quaerat optio consequuntur
+            voluptates! Amet possimus ratione repellendus eligendi fugit consectetur architecto odit, repudiandae, voluptate natus facere earum dignissimos quo sunt sit unde. Optio eveniet hic molestiae possimus enim omnis odio architecto perspiciatis
+            laudantium ad obcaecati maiores, excepturi molestias dicta aliquid veniam nihil minus quis! Voluptatem iste, eius reprehenderit ipsum perferendis inventore, placeat laboriosam ullam a recusandae voluptatibus earum magni? Iure optio in adipisci
+            magnam eveniet est earum accusamus commodi excepturi velit, vel quam explicabo, quos debitis expedita quo consectetur libero deleniti. Dolorum quisquam quo expedita nemo officia, debitis iste ducimus beatae sunt quaerat quam sed, necessitatibus
+            saepe, totam voluptate illum eius sequi iure esse quia dolor atque fugit tenetur asperiores porro! Quaerat expedita ipsa sunt nisi ex! Deleniti aliquid, ipsam eligendi obcaecati illum reprehenderit placeat, pariatur doloribus consequuntur
+            sed quaerat. Eaque voluptas nesciunt nisi, blanditiis sint cupiditate fuga, alias quasi unde qui accusamus, modi, quo iusto illo maxime iure? Provident quo numquam consequuntur a pariatur, quas eligendi natus expedita alias recusandae harum
+            porro blanditiis, nobis veritatis libero.
+        </div>
+    </div>
+
+    <!-- d-flex объявляем флекс контейнер -->
+    <!-- Флекс для разных экранов с приставкой d-sm-flex, d-md-flex -->
+    <!-- Команды:
+        flex-row по умолчанию
+        justify-content-start, end, center, between, around
+        flex-row-rewerse
+        flex-column
+
+        Вертикальное выравнивание
+        align-items-end, center, baseline, stretch
+
+        Инливидуальное выравнивание
+        align-self-end, center, start
+
+        order аналогично флексам
+     -->
+    <div class="container">
+        <div class="d-flex p-3">
+            <div class="m-3 order-2">Flex item 1</div>
+            <div class="m-3 order-3">Flex item 2</div>
+            <div class="m-3 order-1">Flex item 3</div>
+        </div>
+    </div>
+
+    <!-- Карточки -->
+    <!-- Группу карточек создаем через обертку card-deck -->
+    <div class="container-fluid mt-5" style="background-color: #eee;">
+        <div class="container p-5">
+            <!-- <div class="row"> -->
+            <!-- <div class="col">
+                    <div class="card">
+                        <img src="img/witcher.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Title</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil reiciendis fugit, nemo pariatur necessitatibus distinctio at commodi cupiditate. Quaerat dolorum animi, impedit quae ipsum adipisci veritatis atque! Neque nisi,
+                                ut ipsam quisquam error. Suscipit similique iure qui aspernatur, officiis perferendis esse. Ullam voluptas voluptatem asperiores odit eligendi, porro reprehenderit esse!</p>
+                            <a href="#" class="btn btn-primary">Submit</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="img/witcher.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Title</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil reiciendis fugit, nemo pariatur necessitatibus distinctio at commodi cupiditate. Quaerat dolorum animi, impedit quae ipsum adipisci veritatis atque! Neque nisi,
+                                ut ipsam quisquam error. Suscipit similique iure qui aspernatur, officiis perferendis esse. Ullam voluptas voluptatem asperiores odit eligendi, porro reprehenderit esse!</p>
+                            <a href="#" class="btn btn-primary">Submit</a>
+                        </div>
+                    </div>
+                </div> -->
+            <!-- </div> -->
+            <div class="card-deck">
+                <div class="card">
+                    <img src="img/witcher.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Title</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil reiciendis fugit, nemo pariatur necessitatibus distinctio at commodi cupiditate. Quaerat dolorum animi, impedit quae ipsum adipisci veritatis atque! Neque nisi, ut
+                            ipsam quisquam error. Suscipit similique iure qui aspernatur, officiis perferendis esse. Ullam voluptas voluptatem asperiores odit eligendi, porro reprehenderit esse!</p>
+                        <a href="#" class="btn btn-primary">Submit</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/witcher.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Title</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil reiciendis fugit, nemo pariatur necessitatibus distinctio at commodi cupiditate. Quaerat dolorum animi, impedit quae ipsum adipisci veritatis atque! Neque nisi, ut
+                            ipsam quisquam error. Suscipit similique iure qui aspernatur, officiis perferendis esse. Ullam voluptas voluptatem asperiores odit eligendi, porro reprehenderit esse!</p>
+                        <a href="#" class="btn btn-primary">Submit</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/witcher.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Title</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil reiciendis fugit, nemo pariatur necessitatibus distinctio at commodi cupiditate. Quaerat dolorum animi, impedit quae ipsum adipisci veritatis atque! Neque nisi, ut
+                            ipsam quisquam error. Suscipit similique iure qui aspernatur, officiis perferendis esse. Ullam voluptas voluptatem asperiores odit eligendi, porro reprehenderit esse!</p>
+                        <a href="#" class="btn btn-primary">Submit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- адаптивный видеоконтент -->
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://www.youtube.com/embed/AJjKJtU_86I" class="embed-responsive-item" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://www.youtube.com/embed/AJjKJtU_86I" class="embed-responsive-item" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://www.youtube.com/embed/AJjKJtU_86I" class="embed-responsive-item" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
     <script src="lib/jquery/jquery-3.3.1.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
